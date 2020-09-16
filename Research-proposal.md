@@ -16,19 +16,20 @@
 ![histogram](/home/hskim/Documents/github-repos/Report-of-ECCPOW-difficulty /img/histogram.png)
 
 - 데이터 샘플이 부족해 지수분포인지, 혹은 Heavy tail 분포인지 확신 할 수 없음
-  - 만약 지수분포가 아니가 Heavy tail이라면 블록 생성 시간 통제가 불가능 함
+  - 만약 지수분포가 아니라 Heavy tail이라면 블록 생성 시간 통제가 불가능 함
 - 따라서 난이도 조절에 사용되는 parameter인 `n`을 바꿨을 때 지수 분포를 얻을 수 있는지 확인이 필요함
   - 지수분포의 rate($$\lambda$$)를 알고 있다면 확률 분포를 쉽게 얻을 수 있음
     - $$y = e^{-\lambda t}$$
   - 하지만 실험으로 얻은 샘플로 계산한 rate($$\lambda$$)가 실제 rate($$\lambda$$)와 얼마나 일치하는지 확신 알 수 없음
   - 샘플을 얻는데 시간이 매우 오래 걸리기 때문에 rate($$\lambda$$) 추정에 필요한 충분한 샘플을 얻을 수 없음
+  - 따라서 샘플로 얻은 rate($$\lambda$$)로 실제 rate($$\lambda$$)를 어떻게 추정 할 것인가 방법 필요
 - 어떻게 outlier를 정의 할 것인가? 정의 필요
 
 ## 2.  실험 계획 및 예상 결과
 
 1. 데이터 샘플 증가 시켰을때 outlier 관측
 
-- 데이터 샘플 개수에 따라 outlier를 관측 함. 만약 ECCPoW로 생성되는 블록이 지수분포를 갖는다면, outlier가 감소할 것으로 예상 됨
+- 데이터 샘플 개수에 따라 outlier를 관측 함. 만약 ECCPoW로 생성되는 블록이 지수분포를 갖는다면, 데이터 샘플이 증가 할 수록 outlier가 감소할 것으로 예상 됨
 
 2. 난이도 조절에 사용되는 `n`을 증가 시켰을 때 outlier 관측
 
@@ -50,11 +51,15 @@ wikipedia
 article
 
 - Real-time anomaly detection with exponentially-distributed data : https://towardsdatascience.com/real-time-anomaly-detection-with-exponentially-distrubted-data-205e0df32096
+- ML estimate of exponential distribution (with censored data) : https://stats.stackexchange.com/questions/133347/ml-estimate-of-exponential-distribution-with-censored-data
+- Standford lecture material : https://web.stanford.edu/~lutian/coursepdf/unit2.pdf
+- Parameter estimation of exponential distribution with biased sampling : https://stats.stackexchange.com/questions/45001/parameter-estimation-of-exponential-distribution-with-biased-sampling
 
 paper
 
 - The identification of outliers in exponential samples : https://onlinelibrary.wiley.com/doi/pdf/10.1111/1467-9574.01600
 - Big Outliers Versus Heavy Tails:  what to use? : https://arxiv.org/pdf/1611.05410.pdf
+- On the Kolmogorov-Smirnov Test for the Exponential Distribution with Mean Unknown
 
 ## 4. 향후  ECCPoW 개발 계획
 
