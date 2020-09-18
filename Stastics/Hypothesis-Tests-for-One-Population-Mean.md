@@ -58,3 +58,42 @@ In practice, of course, we must have a precise criterion for deciding whether to
   - Null hypothesis가 맞는데 틀리다고 하는 것
 - Type II error: Not rejecting the null hypothesis when it is in fact false.
   - Null hypothesis가 틀린데 맞나고 하는 것
+
+###  Probabilities of Type 1 and Type 2 Errors
+
+The probability of that happening, the Type I error probability, commonly called the ***significance level*** of the hypothesis test, is denoted $$\alpha$$ 
+
+- Significance Level : The probability of making a Type 1 error, that is of rejecting a true null hypothesis, is called the significance level($$\alpha$$) of a hypothesis test.
+
+A Type II error occurs if a false null hypothesis is not rejected. The probability of that happening, the Type II error probability, is denoted $$\beta$$.
+
+> ### Relation between Type I and Type II Error Probabilities
+>
+> For a fixed sample size, the smaller we specify the significance level, $$\alpha$$, the larger will be the probability, $$\beta$$, of not rejecting a false null hypothesis.
+
+### Possible Conclusions for a Hypothesis Test
+
+The significance level, $$\alpha$$, is the probability of making a Type I error, that is, of rejecting a true null hypothesis. Therefore, ***if the hypothesis test is conducted at a small significance level (e.g., $$\alpha$$ = 0.05), the chance of rejecting a true null hypothesis will be small***. 
+
+- n this text, we generally specify a small significance level. Thus, if we do reject the null hypothesis, we can be reasonably confident that the null hypothesis is false.
+
+In other words, ***if we do reject the null hypothesis, we conclude that the data provide sufficient evidence to support the alternative hypothesis***. However, we usually do not know the probability, $$\beta$$, of making a Type II error, that is, of not rejecting a false null hypothesis.
+
+Consequently, if we do not reject the null hypothesis, we simply reserve judgment about which hypothesis is true. In other words, ***if we do not reject the null hypothesis, we conclude only that the data do not provide sufficient evidence to support the alternative hypothesis***; we do not conclude that the data provide sufficient evidence to support the null hypothesis.
+
+## 9.2 P-Value Approach to Hypothesis Testing
+
+Roughly speaking, with the ***P-value approach to hypothesis testing***, we first evaluate how likely observation of the value obtained for the test statistic would be if the null hypothesis is true.
+
+- The criterion for deciding whether to reject the null hypothesis involves a comparison of that likelihood with the specified significance level of the hypothesis test.
+- ***If the P-value is less than or equal to the specified significance level, we reject the null hypothesis***; otherwise, we do not reject the null hypothesis.
+
+### Terminology of the P-Value Approach
+
+P-value
+
+- The P-value of a hypothesis test is the probability of getting sample data at least as inconsistent with the null hypothesis (and supportive of the alternative hypothesis) as the sample data actually obtained. We use the letter P to denote the P-value.
+
+Decision Criterion for a Hypothesis Test Using the P-Value
+
+- If the P -value is less than or equal to the specified significance level, reject the null hypothesis; otherwise, do not reject the null hypothesis. In other words, if $$P \le \alpha$$, reject $$H_0$$ ; otherwise, do not reject $$H_0$$.
