@@ -47,6 +47,7 @@ wikipedia
 - Anomaly detection : https://en.wikipedia.org/wiki/Anomaly_detection
 - Censoring (statistics) : https://en.wikipedia.org/wiki/Censoring_(statistics)
   - In statistics, censoring is a condition in which the value of a measurement or observation is only partially known. 
+- Failure rate : https://en.wikipedia.org/wiki/Failure_rate
 
 article
 
@@ -60,6 +61,7 @@ paper
 - The identification of outliers in exponential samples : https://onlinelibrary.wiley.com/doi/pdf/10.1111/1467-9574.01600
 - Big Outliers Versus Heavy Tails:  what to use? : https://arxiv.org/pdf/1611.05410.pdf
 - On the Kolmogorov-Smirnov Test for the Exponential Distribution with Mean Unknown
+- (국내)T test as a parametric statistic :  https://ekja.org/upload/pdf/kjae-68-540_ko.pdf
 
 ## 4. 향후  ECCPoW 개발 계획
 

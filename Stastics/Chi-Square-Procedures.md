@@ -53,3 +53,4 @@ $$
 \chi^2 = \sum(O-E)^2/E
 $$
 where O and E represent observed and expected frequencies, respectively. Denote the value of the test statistic $$χ_0^2$$.
+
